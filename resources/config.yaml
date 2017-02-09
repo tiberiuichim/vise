@@ -117,7 +117,7 @@ colors:
     tab tree foreground: black
     tab tree hover gradient start: "#e7effd"
     tab tree hover gradient end: "#cbdaf1"
-    tab tree hover border: "#bfcde4"
+    tab tree hover border: "#111111"
     status bar background: black
     status bar private background: "#704214"
     status bar foreground: white

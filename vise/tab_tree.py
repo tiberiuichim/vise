@@ -66,7 +66,7 @@ class TabDelegate(QStyledItemDelegate):
         pal = parent.palette()
         self.dark = pal.color(pal.Text)
         self.light = pal.color(pal.Base)
-        self.highlighted_text = pal.color(pal.HighlightedText)
+        self.highlighted_text = QColor('black') # pal.color(pal.HighlightedText)
         self.errored_out = False
         self.current_background = QBrush(QColor(color('tab tree current background', Qt.lightGray)))
 
@@ -228,6 +228,7 @@ class TabTree(QTreeWidget):
                     border: 1px solid transparent;
                     padding-top:0.5ex;
                     padding-bottom:0.5ex;
+                    color: FG;
                 }
 
                 QTreeView::item:hover {
